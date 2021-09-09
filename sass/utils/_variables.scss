@@ -1,0 +1,22 @@
+$card-set-indent: 30px;
+$time-animation: cubic-bezier(0.4, 0, 0.2, 1);
+
+$colors: (
+  "primary-text": #757575,
+  "title-text": #212121,
+  "logo": #000000,
+  "accent": #2196f3,
+  "accent-button": #188ce8,
+  "white-text": #ffffff,
+  "text-footer": rgba(255, 255, 255, 0.6),
+  "primary-bg": #ffffff,
+  "second-bg": #f5f4fa,
+  "footer-bg": #2f303a,
+  "border-menu": #ececec,
+  "border-gallery": #eeeeee,
+  "main-social-icon": #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
