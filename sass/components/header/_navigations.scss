@@ -1,0 +1,51 @@
+.navigations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigations__list {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.navigations__link {
+  position: relative;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  text-decoration: none;
+  color: getColor("title-text");
+
+  transition: color 250ms $time-animation;
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}
+
+.navigations__link--current {
+  color: getColor("accent");
+
+  &::after {
+    position: absolute;
+    bottom: calc(0% - 1px);
+    left: 0;
+
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: getColor("accent");
+  }
+}

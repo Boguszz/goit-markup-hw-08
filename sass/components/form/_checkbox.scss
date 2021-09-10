@@ -1,0 +1,54 @@
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox__checkmarker {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox__icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid #212121;
+  border-radius: 4px;
+
+  transition: background-color 250ms $time-animation,
+    border-color 250ms $time-animation, background-image 250ms $time-animation;
+
+  .checkbox__checkmarker:focus + & {
+    border-color: getColor("accent");
+  }
+
+  .checkbox__checkmarker:checked + & {
+    border-color: getColor("accent");
+    background-color: getColor("accent");
+    background-image: url("../images/icons/form-check.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+  }
+}
+
+.checkbox__text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.checkbox__link {
+  text-decoration-line: underline;
+  color: getColor("accent");
+}

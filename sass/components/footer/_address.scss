@@ -1,0 +1,38 @@
+.address {
+  margin-bottom: 60px;
+}
+
+.address__company {
+  font-style: normal;
+  line-height: 1.71;
+  color: getColor("white-text");
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.address__link {
+  display: inline-block;
+
+  font-style: normal;
+  line-height: 1.71;
+  text-decoration: none;
+  color: getColor("text-footer");
+
+  transition: color 250ms $time-animation;
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}
+
+.address__link--color {
+  color: getColor("white-text");
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}

@@ -20,16 +20,74 @@
 <body>
     <!-- Главная шапка сайта, которая содержит логотип, навигацию и контактные данные. -->
     <header class="header">
-        <div class="container header__container">
+        <div class="container">
             <!-- Главная навигация, в неё так же входит логотип как ссылка. -->
             <nav class="navigations">
                 <a class="logo" href="./index.html"><span class="logo--color">Web</span>Studio</a>
 
+                <!-- Кнопка открытия мобильного меню. -->
+                <button class="mobile-menu__button mobile-menu__button--open menu-toggle js-open-menu" aria-expanded="false" aria-controls="menu" type="button">
+                    <svg width="40" height="40">
+                        <use class="mobile-menu__icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                
                 <ul class="navigations__list">
                     <li class="navigations__item"><a class="navigations__link navigations__link--current" href="./index.html">Студия</a></li>
                     <li class="navigations__item"><a class="navigations__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="navigations__item"><a class="navigations__link" href="#">Контакты</a></li>
                 </ul>
+                
+                <!-- Мобильная версия меню. -->
+                <div class="mobile-menu js-menu-container" id="menu">
+                    <!-- Кнопка закрытия мобильного меню. -->
+                    <button class="mobile-menu__button mobile-menu__button--close menu-toggle js-close-menu" type="button">
+                        <svg width="18" height="18">
+                            <use class="mobile-menu__icon-close" href="./images/icons/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    
+                    <!-- Мобильное меню. -->
+                    <ul class="mobile-menu__navigations-list">
+                        <li class="mobile-menu__navigations-item">
+                            <a class="mobile-menu__navigations-link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-menu__navigations-item">
+                            <a class="mobile-menu__navigations-link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__navigations-item">
+                            <a class="mobile-menu__navigations-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="mobile-menu__contacts-list">
+                        <li class="mobile-menu__contacts-item">
+                            <a class="mobile-menu__contacts-link mobile-menu__contacts-link--phone " href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__contacts-item">
+                            <a class="mobile-menu__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="mobile-menu__social-list">
+                        <li class="mobile-menu__social-item mobile-menu__social-item--after">
+                            <a class="mobile-menu__social-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
+                                aria-label="Instagram">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__social-item mobile-menu__social-item--after">
+                            <a class="mobile-menu__social-link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
+                                aria-label="Twitter">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item mobile-menu__social-item--after">
+                            <a class="mobile-menu__social-link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
+                                aria-label="Facebook">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a class="mobile-menu__social-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
+                                aria-label="LinkedIn">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
 
             <!-- Контактная информация, ссылки. -->
@@ -112,23 +170,83 @@
 
         <!-- Секция описывающая род деятельности студии.  -->
         <section class="section section--no-pading-top">
-            <div class="container">
+            <div class="container ">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="working">
                     <li class="working__item">
-                        <img src="./images/home/img-1.jpg" alt="Рабочий стол с планшетом и клавиатурой" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/home/working-1/img-370.webp 370w,
+                                    ./images/home/working-1/img@2x-740.webp 740w,
+                                    ./images/home/working-1/img@3x-1110.webp 1110w
+                                " 
+                                type="image/webp"
+                                sizes="100vw"
+                            >
+                            <img 
+                                srcset="
+                                    ./images/home/working-1/img-370.jpg 370w,
+                                    ./images/home/working-1/img@2x-740.jpg 740w,
+                                    ./images/home/working-1/img@3x-1110.jpg 1110w
+                                "
+                                src="./images/home/working-1/img-370.jpg"
+                                alt="Рабочий стол с планшетом и клавиатурой"
+                                sizes="100vw"
+                            >
+                        </picture>
                         <div class="working__thumb">
                             <h3 class="working__title">Десктопные приложения</h3>
                         </div>
                     </li>
                     <li class="working__item">
-                        <img src="./images/home/img-2.jpg" alt="Ноутбук а перед ним рука с теефоном" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/home/working-2/img-370.webp 370w,
+                                    ./images/home/working-2/img@2x-740.webp 740w,
+                                    ./images/home/working-2/img@3x-1110.webp 1110w
+                                " 
+                                type="image/webp"
+                                sizes="100vw"
+                            >
+                            <img 
+                                srcset="
+                                    ./images/home/working-2/img-370.jpg 370w,
+                                    ./images/home/working-2/img@2x-740.jpg 740w,
+                                    ./images/home/working-2/img@3x-1110.jpg 1110w
+                                "
+                                src="./images/home/working-2/img-370.jpg"
+                                alt="Ноутбук а перед ним рука с теефоном"
+                                sizes="100vw"
+                            >
+                        </picture>
                         <div class="working__thumb">
                             <h3 class="working__title">Мобильные приложения</h3>
                         </div>
                     </li>
                     <li class="working__item">
-                        <img src="./images/home/img-3.jpg" alt="Планшет в руке с палитрой цветов" width="370" height="294">
+                    <picture>
+                            <source
+                                srcset="
+                                    ./images/home/working-3/img-370.webp 370w,
+                                    ./images/home/working-3/img@2x-740.webp 740w,
+                                    ./images/home/working-3/img@3x-1110.webp 1110w
+                                " 
+                                type="image/webp"
+                                sizes="100vw"
+                            >
+                            <img 
+                                srcset="
+                                    ./images/home/working-3/img-370.jpg 370w,
+                                    ./images/home/working-3/img@2x-740.jpg 740w,
+                                    ./images/home/working-3/img@3x-1110.jpg 1110w
+                                "
+                                src="./images/home/working-3/img-370.jpg"
+                                alt="Планшет в руке с палитрой цветов"
+                                sizes="100vw"
+                            >
+                        </picture>
                         <div class="working__thumb">
                             <h3 class="working__title">Дизайнерские решения</h3>
                         </div>
@@ -143,7 +261,27 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img src="./images/home/team-1.jpg" alt="Игорь Демьяненко - Product Designer" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/home/team-1/img-270.webp 270w,
+                                    ./images/home/team-1/img@2x-540.webp 540w,
+                                    ./images/home/team-1/img@3x-810.webp 810w
+                                " 
+                                type="image/webp"
+                                sizes="100vw"
+                            >
+                            <img 
+                                srcset="
+                                    ./images/home/team-1/img-270.jpg 270w,
+                                    ./images/home/team-1/img@2x-540.jpg 540w,
+                                    ./images/home/team-1/img@3x-810.jpg 810w
+                                "
+                                src="./images/home/team-1/img-270.jpg"
+                                alt="Игорь Демьяненко - Product Designer"
+                                sizes="100vw"
+                            >
+                        </picture>
                         <div class="team__thumb">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p lang="en" class="team__description">Product Designer</p>
@@ -186,7 +324,27 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/home/team-2.jpg" alt="Ольга Репина - Frontend Developer" width="270" height="260">
+                    <picture>
+                            <source
+                                srcset="
+                                    ./images/home/team-2/img-270.webp 270w,
+                                    ./images/home/team-2/img@2x-540.webp 540w,
+                                    ./images/home/team-2/img@3x-810.webp 810w
+                                " 
+                                type="image/webp"
+                                sizes="100vw"
+                            >
+                            <img 
+                                srcset="
+                                    ./images/home/team-2/img-270.jpg 270w,
+                                    ./images/home/team-2/img@2x-540.jpg 540w,
+                                    ./images/home/team-2/img@3x-810.jpg 810w
+                                "
+                                src="./images/home/team-2/img-270.jpg"
+                                alt="Ольга Репина - Frontend Developer"
+                                sizes="100vw"
+                            >
+                        </picture>
                         <div class="team__thumb">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p lang="en" class="team__description">Frontend Developer</p>
@@ -225,7 +383,27 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/home/team-3.jpg" alt="Николай Тарасов - Marketing" width="270" height="260">
+                    <picture>
+                            <source
+                                srcset="
+                                    ./images/home/team-3/img-270.webp 270w,
+                                    ./images/home/team-3/img@2x-540.webp 540w,
+                                    ./images/home/team-3/img@3x-810.webp 810w
+                                " 
+                                type="image/webp"
+                                sizes="100vw"
+                            >
+                            <img 
+                                srcset="
+                                    ./images/home/team-3/img-270.jpg 270w,
+                                    ./images/home/team-3/img@2x-540.jpg 540w,
+                                    ./images/home/team-3/img@3x-810.jpg 810w
+                                "
+                                src="./images/home/team-3/img-270.jpg"
+                                alt="Николай Тарасов - Marketing"
+                                sizes="100vw"
+                            >
+                        </picture>
                         <div class="team__thumb">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p lang="en" class="team__description">Marketing</p>
@@ -264,7 +442,27 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/home/team-4.jpg" alt="Михаил Ермаков - UI Designer" width="270" height="260">
+                    <picture>
+                            <source
+                                srcset="
+                                    ./images/home/team-4/img-270.webp 270w,
+                                    ./images/home/team-4/img@2x-540.webp 540w,
+                                    ./images/home/team-4/img@3x-810.webp 810w
+                                " 
+                                type="image/webp"
+                                sizes="100vw"
+                            >
+                            <img 
+                                srcset="
+                                    ./images/home/team-4/img-270.jpg 270w,
+                                    ./images/home/team-4/img@2x-540.jpg 540w,
+                                    ./images/home/team-4/img@3x-810.jpg 810w
+                                "
+                                src="./images/home/team-4/img-270.jpg"
+                                alt="Михаил Ермаков - UI Designer"
+                                sizes="100vw"
+                            >
+                        </picture>
                         <div class="team__thumb">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p lang="en" class="team__description">UI Designer</p>
@@ -416,7 +614,7 @@
             <form class="subscription-form">
                 <label class="subscription-form__label">
                     <span class="subscription-form__text">Подпишитесь на рассылку</span>
-                    <input class="subscription-form__input" type="email" name="subscription-email" placeholder="E-mail" autocomplete="" required>
+                    <input class="subscription-form__input" type="email" name="subscription-email" placeholder="E-mail" autocomplete="on" required>
                 </label>
                 <button class="subscription-form__button" type="submit">
                     Подписаться
@@ -443,7 +641,7 @@
                 <form class="form__contacts" autocomplete="on">
                     <label class="field">
                         <span class="field__label">Имя</span>
-                        <input class="field__input" type="text" name="user-name" autofocus required>
+                        <input class="field__input" type="text" name="user-name" required>
                         <svg class="field__icon">
                             <use href="./images/icons/sprite.svg#icon-form-name"></use>
                         </svg>
@@ -481,5 +679,9 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

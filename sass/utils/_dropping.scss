@@ -1,8 +1,9 @@
 body {
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
+  letter-spacing: 0.03em;
   color: getColor("primary-text");
   background-color: getColor("primary-bg");
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -27,6 +28,6 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }

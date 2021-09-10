@@ -1,0 +1,37 @@
+.working {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.working__item {
+  position: relative;
+  flex-basis: calc((100% - 60px) / 3);
+  margin-right: $card-set-indent;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.working__thumb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.working__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor("white-text");
+}

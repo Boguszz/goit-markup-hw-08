@@ -1,0 +1,9 @@
+.footer {
+  padding: 60px 0;
+  background-color: getColor("footer-bg");
+  text-align: center;
+}
+
+@import "./address";
+@import "./social";
+@import "./subscription-form";
