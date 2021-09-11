@@ -1,11 +1,26 @@
+@media screen and (min-width: $tablet) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .gallery__item {
-  margin-bottom: 30px;
   background-color: getColor("primary-bg");
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 .gallery__link {
   text-decoration: none;
   transition: box-shadow 250ms $time-animation;
+
+  flex-direction: column;
+  height: 100%;
 
   &:hover,
   &:focus {
@@ -32,7 +47,7 @@
   padding-right: 24px;
 
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms $time-animation;
   overflow: auto;
 
@@ -51,7 +66,6 @@
 
 .gallery__thumb {
   padding: 20px 24px;
-
   border-right: 1px solid getColor("border-gallery");
   border-bottom: 1px solid getColor("border-gallery");
   border-left: 1px solid getColor("border-gallery");

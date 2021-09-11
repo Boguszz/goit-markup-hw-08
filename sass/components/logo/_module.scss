@@ -6,11 +6,18 @@
   font-family: "Raleway", sans-serif;
   color: getColor("logo");
 
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
   &--footer {
     display: inline-block;
     margin-bottom: 20px;
-
     color: getColor("white-text");
+
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
   }
 
   &--color {

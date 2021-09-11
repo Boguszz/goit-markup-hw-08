@@ -3,8 +3,11 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
   @media screen and (min-width: $mobile) {
     width: 480px;
@@ -12,9 +15,19 @@
 
   @media screen and (min-width: $tablet) {
     width: 768px;
+
+    &--baseline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     width: 1200px;
+  }
+
+  &--header {
+    display: flex;
   }
 }

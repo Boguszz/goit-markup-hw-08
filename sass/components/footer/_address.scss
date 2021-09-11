@@ -1,5 +1,9 @@
 .address {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 2);
+  }
 }
 
 .address__company {
