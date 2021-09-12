@@ -1,7 +1,15 @@
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
   .subscription-form {
     margin: 0 auto;
     width: 450px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .subscription-form {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
   }
 }
 
@@ -38,6 +46,12 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: getColor("text-footer");
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
   }
 }
 

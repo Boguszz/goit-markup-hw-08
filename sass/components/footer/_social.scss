@@ -1,8 +1,14 @@
 .social {
   margin-bottom: 60px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: calc(100% / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: auto;
+    text-align: left;
   }
 }
 

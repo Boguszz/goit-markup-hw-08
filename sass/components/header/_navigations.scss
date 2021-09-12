@@ -10,6 +10,10 @@
   @media screen and (min-width: $tablet) {
     margin-right: 84px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: auto;
+  }
 }
 
 .navigations__list {
@@ -31,9 +35,10 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 1.14;
+  line-height: 1.16;
   text-decoration: none;
   color: getColor("title-text");
 
@@ -42,6 +47,11 @@
   &:hover,
   &:focus {
     color: getColor("accent");
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 

@@ -1,8 +1,14 @@
 .address {
   margin-bottom: 60px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: calc(100% / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -14,6 +20,10 @@
 
 .address__item:not(:last-child) {
   margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {

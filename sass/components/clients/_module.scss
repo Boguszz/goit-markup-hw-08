@@ -12,6 +12,11 @@
     width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+  }
 }
 
 .clients__link {
@@ -30,6 +35,14 @@
   &:focus {
     border: 1px solid getColor("accent");
     color: getColor("accent");
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 16px 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 16px 32px;
   }
 }
 

@@ -1,13 +1,13 @@
 .working {
   display: flex;
-  margin: 0;
+  margin: -15px;
   padding: 0;
 }
 
 .working__item {
   position: relative;
-  flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30%;
+  width: calc((100% - 6 * 15px) / 3);
+  margin: 15px;
 
   &:last-child {
     margin-right: 0;

@@ -6,10 +6,20 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .contacts__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 
 .contacts__link {
@@ -23,17 +33,25 @@
   text-decoration: none;
   color: getColor("primary-text");
 
-  transition: color 250ms var(--time-animation);
+  transition: color 250ms $time-animation;
 
   &:hover,
   &:focus {
     color: getColor("accent");
   }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
-  width: 10px;
-  height: 14px;
   margin-right: 8px;
   fill: currentColor;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
 }
