@@ -76,6 +76,10 @@
   &:focus {
     color: getColor("accent");
   }
+
+  &--current {
+    color: getColor("accent");
+  }
 }
 
 .mobile-menu__contacts-list {

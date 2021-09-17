@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-
+    
     <!-- Шрифты сайта: roboto, raleway. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
+    
     <!-- Стили сайта. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -24,7 +24,7 @@
             <!-- Главная навигация, в неё так же входит логотип как ссылка. -->
             <nav class="navigations">
                 <a class="logo" href="./index.html"><span class="logo--color">Web</span>Studio</a>
-
+                
                 <!-- Кнопка открытия мобильного меню. -->
                 <button class="mobile-menu__button mobile-menu__button--open menu-toggle js-open-menu" aria-expanded="false" aria-controls="menu" type="button">
                     <svg width="40" height="40">
@@ -50,7 +50,7 @@
                     <!-- Мобильное меню. -->
                     <ul class="mobile-menu__navigations-list">
                         <li class="mobile-menu__navigations-item">
-                            <a class="mobile-menu__navigations-link" href="./index.html">Студия</a>
+                            <a class="mobile-menu__navigations-link mobile-menu__navigations-link--current" href="./index.html">Студия</a>
                         </li>
                         <li class="mobile-menu__navigations-item">
                             <a class="mobile-menu__navigations-link" href="./portfolio.html">Портфолио</a>
@@ -89,7 +89,7 @@
                     </ul>
                 </div>
             </nav>
-
+            
             <!-- Контактная информация, ссылки. -->
             <ul class="contacts">
                 <li class="contacts__item">
@@ -107,14 +107,14 @@
             </ul>
         </div>
     </header>
-
+    
     <main>
         <!--  Секция герой, главный слоган студии. -->
         <section class="hero">
             <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
             <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </section>
-
+    
         <!-- Секция описывающая особености студии. -->
         <section class="section">
             <div class="container">
@@ -167,7 +167,7 @@
                 </ul>
             </div>
         </section>
-
+        
         <!-- Секция описывающая род деятельности студии.  -->
         <section class="section section--no-pading-top">
             <div class="container ">
@@ -177,22 +177,25 @@
                         <picture>
                             <source
                                 srcset="
-                                    ./images/home/working-1/img-370.webp 370w,
-                                    ./images/home/working-1/img@2x-740.webp 740w,
-                                    ./images/home/working-1/img@3x-1110.webp 1110w
+                                    ./images/home/working/desktop/working-1/img@1x-370.webp 370w,
+                                    ./images/home/working/desktop/working-1/img@2x-740.webp 740w,
+                                    ./images/home/working/desktop/working-1/img@3x-1110.webp 1110w
                                 " 
                                 type="image/webp"
-                                sizes="100vw"
+                                sizes="370px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/working/desktop/working-1/img@1x-370.jpg 370w,
+                                    ./images/home/working/desktop/working-1/img@2x-740.jpg 740w,
+                                    ./images/home/working/desktop/working-1/img@3x-1110.jpg 1110w
+                                " 
+                                type="image/jpg"
+                                sizes="370px"
                             >
                             <img 
-                                srcset="
-                                    ./images/home/working-1/img-370.jpg 370w,
-                                    ./images/home/working-1/img@2x-740.jpg 740w,
-                                    ./images/home/working-1/img@3x-1110.jpg 1110w
-                                "
-                                src="./images/home/working-1/img-370.jpg"
+                                src="./images/home/working/desktop/working-1/img@1x-370.jpg"
                                 alt="Рабочий стол с планшетом и клавиатурой"
-                                sizes="100vw"
                             >
                         </picture>
                         <div class="working__thumb">
@@ -203,22 +206,25 @@
                         <picture>
                             <source
                                 srcset="
-                                    ./images/home/working-2/img-370.webp 370w,
-                                    ./images/home/working-2/img@2x-740.webp 740w,
-                                    ./images/home/working-2/img@3x-1110.webp 1110w
+                                    ./images/home/working/desktop/working-2/img@1x-370.webp 370w,
+                                    ./images/home/working/desktop/working-2/img@2x-740.webp 740w,
+                                    ./images/home/working/desktop/working-2/img@3x-1110.webp 1110w
                                 " 
                                 type="image/webp"
-                                sizes="100vw"
+                                sizes="370px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/working/desktop/working-2/img@1x-370.jpg 370w,
+                                    ./images/home/working/desktop/working-2/img@2x-740.jpg 740w,
+                                    ./images/home/working/desktop/working-2/img@3x-1110.jpg 1110w
+                                " 
+                                type="image/jpg"
+                                sizes="370px"
                             >
                             <img 
-                                srcset="
-                                    ./images/home/working-2/img-370.jpg 370w,
-                                    ./images/home/working-2/img@2x-740.jpg 740w,
-                                    ./images/home/working-2/img@3x-1110.jpg 1110w
-                                "
-                                src="./images/home/working-2/img-370.jpg"
+                                src="./images/home/working/desktop/working-2/img@1x-370.jpg"
                                 alt="Ноутбук а перед ним рука с теефоном"
-                                sizes="100vw"
                             >
                         </picture>
                         <div class="working__thumb">
@@ -229,22 +235,25 @@
                     <picture>
                             <source
                                 srcset="
-                                    ./images/home/working-3/img-370.webp 370w,
-                                    ./images/home/working-3/img@2x-740.webp 740w,
-                                    ./images/home/working-3/img@3x-1110.webp 1110w
+                                    ./images/home/working/desktop/working-3/img@1x-370.webp 370w,
+                                    ./images/home/working/desktop/working-3/img@2x-740.webp 740w,
+                                    ./images/home/working/desktop/working-3/img@3x-1110.webp 1110w
                                 " 
                                 type="image/webp"
-                                sizes="100vw"
+                                sizes="370px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/working/desktop/working-3/img@1x-370.jpg 370w,
+                                    ./images/home/working/desktop/working-3/img@2x-740.jpg 740w,
+                                    ./images/home/working/desktop/working-3/img@3x-1110.jpg 1110w
+                                " 
+                                type="image/jpg"
+                                sizes="370px"
                             >
                             <img 
-                                srcset="
-                                    ./images/home/working-3/img-370.jpg 370w,
-                                    ./images/home/working-3/img@2x-740.jpg 740w,
-                                    ./images/home/working-3/img@3x-1110.jpg 1110w
-                                "
-                                src="./images/home/working-3/img-370.jpg"
+                                src="./images/home/working/desktop/working-3/img@1x-370.jpg"
                                 alt="Планшет в руке с палитрой цветов"
-                                sizes="100vw"
                             >
                         </picture>
                         <div class="working__thumb">
@@ -254,7 +263,7 @@
                 </ul>
             </div>
         </section>
-
+        
         <!-- Секция показывающая команду студии. -->
         <section class="section section--gray-bg-color">
             <div class="container">
@@ -264,22 +273,67 @@
                         <picture>
                             <source
                                 srcset="
-                                    ./images/home/team-1/img-270.webp 270w,
-                                    ./images/home/team-1/img@2x-540.webp 540w,
-                                    ./images/home/team-1/img@3x-810.webp 810w
-                                " 
+                                    ./images/home/team/desktop/team-1/img@1x-270.webp 270w,
+                                    ./images/home/team/desktop/team-1/img@2x-540.webp 540w,
+                                    ./images/home/team/desktop/team-1/img@3x-810.webp 810w
+                                "
+                                media="(min-width: 1200px)"
                                 type="image/webp"
-                                sizes="100vw"
+                                sizes="(min-width: 1200px) 270px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/desktop/team-1/img@1x-270.jpg 270w,
+                                    ./images/home/team/desktop/team-1/img@2x-540.jpg 540w,
+                                    ./images/home/team/desktop/team-1/img@3x-810.jpg 810w
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                                sizes="(min-width: 1200px) 270px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/tablet/team-1/img@1x-354.webp 354w,
+                                    ./images/home/team/tablet/team-1/img@2x-708.webp 708w,
+                                    ./images/home/team/tablet/team-1/img@3x-1062.webp 1062w
+                                "
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                                sizes="(min-width: 768px) 354px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/tablet/team-1/img@1x-354.jpg 354w,
+                                    ./images/home/team/tablet/team-1/img@2x-708.jpg 708w,
+                                    ./images/home/team/tablet/team-1/img@3x-1062.jpg 1062w
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                                sizes="(min-width: 768px) 354px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/mobile/team-1/img@1x-450.webp 450w,
+                                    ./images/home/team/mobile/team-1/img@2x-900.webp 900w,
+                                    ./images/home/team/mobile/team-1/img@3x-1062.webp 1062w
+                                " 
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                                sizes="450px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/mobile/team-1/img@1x-450.jpg 450w,
+                                    ./images/home/team/mobile/team-1/img@2x-900.jpg 900w,
+                                    ./images/home/team/mobile/team-1/img@3x-1062.jpg 1062w
+                                " 
+                                media="(max-width: 767px)"
+                                type="image/jpg"
+                                sizes="450px"
                             >
                             <img 
-                                srcset="
-                                    ./images/home/team-1/img-270.jpg 270w,
-                                    ./images/home/team-1/img@2x-540.jpg 540w,
-                                    ./images/home/team-1/img@3x-810.jpg 810w
-                                "
-                                src="./images/home/team-1/img-270.jpg"
+                                src="./images/home/team/mobile/team-1/img@1x-450.jpg"
                                 alt="Игорь Демьяненко - Product Designer"
-                                sizes="100vw"
                             >
                         </picture>
                         <div class="team__thumb">
@@ -327,22 +381,67 @@
                     <picture>
                             <source
                                 srcset="
-                                    ./images/home/team-2/img-270.webp 270w,
-                                    ./images/home/team-2/img@2x-540.webp 540w,
-                                    ./images/home/team-2/img@3x-810.webp 810w
-                                " 
+                                    ./images/home/team/desktop/team-2/img@1x-270.webp 270w,
+                                    ./images/home/team/desktop/team-2/img@2x-540.webp 540w,
+                                    ./images/home/team/desktop/team-2/img@3x-810.webp 810w
+                                "
+                                media="(min-width: 1200px)"
                                 type="image/webp"
-                                sizes="100vw"
+                                sizes="(min-width: 1200px) 270px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/desktop/team-2/img@1x-270.jpg 270w,
+                                    ./images/home/team/desktop/team-2/img@2x-540.jpg 540w,
+                                    ./images/home/team/desktop/team-2/img@3x-810.jpg 810w
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                                sizes="(min-width: 1200px) 270px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/tablet/team-2/img@1x-354.webp 354w,
+                                    ./images/home/team/tablet/team-2/img@2x-708.webp 708w,
+                                    ./images/home/team/tablet/team-2/img@3x-1062.webp 1062w
+                                "
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                                sizes="(min-width: 768px) 354px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/tablet/team-2/img@1x-354.jpg 354w,
+                                    ./images/home/team/tablet/team-2/img@2x-708.jpg 708w,
+                                    ./images/home/team/tablet/team-2/img@3x-1062.jpg 1062w
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                                sizes="(min-width: 768px) 354px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/mobile/team-2/img@1x-450.webp 450w,
+                                    ./images/home/team/mobile/team-2/img@2x-900.webp 900w,
+                                    ./images/home/team/mobile/team-2/img@3x-1062.webp 1062w
+                                " 
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                                sizes="450px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/mobile/team-2/img@1x-450.jpg 450w,
+                                    ./images/home/team/mobile/team-2/img@2x-900.jpg 900w,
+                                    ./images/home/team/mobile/team-2/img@3x-1062.jpg 1062w
+                                " 
+                                media="(max-width: 767px)"
+                                type="image/jpg"
+                                sizes="450px"
                             >
                             <img 
-                                srcset="
-                                    ./images/home/team-2/img-270.jpg 270w,
-                                    ./images/home/team-2/img@2x-540.jpg 540w,
-                                    ./images/home/team-2/img@3x-810.jpg 810w
-                                "
-                                src="./images/home/team-2/img-270.jpg"
+                                src="./images/home/team/mobile/team-2/img@1x-450.jpg"
                                 alt="Ольга Репина - Frontend Developer"
-                                sizes="100vw"
                             >
                         </picture>
                         <div class="team__thumb">
@@ -386,22 +485,67 @@
                     <picture>
                             <source
                                 srcset="
-                                    ./images/home/team-3/img-270.webp 270w,
-                                    ./images/home/team-3/img@2x-540.webp 540w,
-                                    ./images/home/team-3/img@3x-810.webp 810w
-                                " 
+                                    ./images/home/team/desktop/team-3/img@1x-270.webp 270w,
+                                    ./images/home/team/desktop/team-3/img@2x-540.webp 540w,
+                                    ./images/home/team/desktop/team-3/img@3x-810.webp 810w
+                                "
+                                media="(min-width: 1200px)"
                                 type="image/webp"
-                                sizes="100vw"
+                                sizes="(min-width: 1200px) 270px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/desktop/team-3/img@1x-270.jpg 270w,
+                                    ./images/home/team/desktop/team-3/img@2x-540.jpg 540w,
+                                    ./images/home/team/desktop/team-3/img@3x-810.jpg 810w
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                                sizes="(min-width: 1200px) 270px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/tablet/team-3/img@1x-354.webp 354w,
+                                    ./images/home/team/tablet/team-3/img@2x-708.webp 708w,
+                                    ./images/home/team/tablet/team-3/img@3x-1062.webp 1062w
+                                "
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                                sizes="(min-width: 768px) 354px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/tablet/team-3/img@1x-354.jpg 354w,
+                                    ./images/home/team/tablet/team-3/img@2x-708.jpg 708w,
+                                    ./images/home/team/tablet/team-3/img@3x-1062.jpg 1062w
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                                sizes="(min-width: 768px) 354px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/mobile/team-3/img@1x-450.webp 450w,
+                                    ./images/home/team/mobile/team-3/img@2x-900.webp 900w,
+                                    ./images/home/team/mobile/team-3/img@3x-1062.webp 1062w
+                                " 
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                                sizes="450px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/mobile/team-3/img@1x-450.jpg 450w,
+                                    ./images/home/team/mobile/team-3/img@2x-900.jpg 900w,
+                                    ./images/home/team/mobile/team-3/img@3x-1062.jpg 1062w
+                                " 
+                                media="(max-width: 767px)"
+                                type="image/jpg"
+                                sizes="450px"
                             >
                             <img 
-                                srcset="
-                                    ./images/home/team-3/img-270.jpg 270w,
-                                    ./images/home/team-3/img@2x-540.jpg 540w,
-                                    ./images/home/team-3/img@3x-810.jpg 810w
-                                "
-                                src="./images/home/team-3/img-270.jpg"
+                                src="./images/home/team/mobile/team-3/img@1x-450.jpg"
                                 alt="Николай Тарасов - Marketing"
-                                sizes="100vw"
                             >
                         </picture>
                         <div class="team__thumb">
@@ -445,22 +589,67 @@
                     <picture>
                             <source
                                 srcset="
-                                    ./images/home/team-4/img-270.webp 270w,
-                                    ./images/home/team-4/img@2x-540.webp 540w,
-                                    ./images/home/team-4/img@3x-810.webp 810w
-                                " 
+                                    ./images/home/team/desktop/team-4/img@1x-270.webp 270w,
+                                    ./images/home/team/desktop/team-4/img@2x-540.webp 540w,
+                                    ./images/home/team/desktop/team-4/img@3x-810.webp 810w
+                                "
+                                media="(min-width: 1200px)"
                                 type="image/webp"
-                                sizes="100vw"
+                                sizes="(min-width: 1200px) 270px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/desktop/team-4/img@1x-270.jpg 270w,
+                                    ./images/home/team/desktop/team-4/img@2x-540.jpg 540w,
+                                    ./images/home/team/desktop/team-4/img@3x-810.jpg 810w
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                                sizes="(min-width: 1200px) 270px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/tablet/team-4/img@1x-354.webp 354w,
+                                    ./images/home/team/tablet/team-4/img@2x-708.webp 708w,
+                                    ./images/home/team/tablet/team-4/img@3x-1062.webp 1062w
+                                "
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                                sizes="(min-width: 768px) 354px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/tablet/team-4/img@1x-354.jpg 354w,
+                                    ./images/home/team/tablet/team-4/img@2x-708.jpg 708w,
+                                    ./images/home/team/tablet/team-4/img@3x-1062.jpg 1062w
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                                sizes="(min-width: 768px) 354px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/mobile/team-4/img@1x-450.webp 450w,
+                                    ./images/home/team/mobile/team-4/img@2x-900.webp 900w,
+                                    ./images/home/team/mobile/team-4/img@3x-1062.webp 1062w
+                                " 
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                                sizes="450px"
+                            >
+                            <source
+                                srcset="
+                                    ./images/home/team/mobile/team-4/img@1x-450.jpg 450w,
+                                    ./images/home/team/mobile/team-4/img@2x-900.jpg 900w,
+                                    ./images/home/team/mobile/team-4/img@3x-1062.jpg 1062w
+                                " 
+                                media="(max-width: 767px)"
+                                type="image/jpg"
+                                sizes="450px"
                             >
                             <img 
-                                srcset="
-                                    ./images/home/team-4/img-270.jpg 270w,
-                                    ./images/home/team-4/img@2x-540.jpg 540w,
-                                    ./images/home/team-4/img@3x-810.jpg 810w
-                                "
-                                src="./images/home/team-4/img-270.jpg"
+                                src="./images/home/team/mobile/team-4/img@1x-450.jpg"
                                 alt="Михаил Ермаков - UI Designer"
-                                sizes="100vw"
                             >
                         </picture>
                         <div class="team__thumb">
@@ -503,7 +692,7 @@
                 </ul>
             </div>
         </section>
-
+        
         <!-- Секция постоянные клиенты. -->
         <section class="section">
             <div class="container">
@@ -555,7 +744,7 @@
             </div>
         </section>
     </main>
-
+    
     <!-- Подвал сайта, содержит логотип и контактные данные. -->
     <footer class="footer">
         <div class="container container--baseline">
@@ -646,7 +835,7 @@
                             <use href="./images/icons/sprite.svg#icon-form-name"></use>
                         </svg>
                     </label>
-                
+                    
                     <label class="field">
                         <span class="field__label">Телефон</span>
                         <input class="field__input" type="tel" name="user-phone" required>
@@ -654,7 +843,7 @@
                             <use href="./images/icons/sprite.svg#icon-form-phone"></use>
                         </svg>
                     </label>
-                
+                    
                     <label class="field">
                         <span class="field__label">Почта</span>
                         <input class="field__input" type="email" name="user-email">
@@ -662,12 +851,12 @@
                             <use href="./images/icons/sprite.svg#icon-form-email"></use>
                         </svg>
                     </label>
-                
+                    
                     <label class="comentary">
                         <span class="comentary__label">Комментарий</span>
                         <textarea class="comentary__textarea" name="user-commentary" placeholder="Введите текст"></textarea>
                     </label>
-                
+                    
                     <label class="checkbox">
                         <input class="checkbox__checkmarker" type="checkbox" name="user-policy" required>
                         <span class="checkbox__icon"></span>
