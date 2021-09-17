@@ -813,6 +813,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/home/hero/img-480.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/home/hero/img-480.jpg);
   background-repeat: no-repeat;
@@ -862,6 +863,7 @@ img {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/home/hero/img-1600.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/home/hero/img-1600.jpg);
   }
@@ -1217,6 +1219,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
     width: calc(100% / 2);
+    margin-bottom: 0;
   }
 }
 
@@ -1273,6 +1276,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .social {
     width: calc(100% / 2);
+    margin-bottom: 0;
   }
 }
 
@@ -1337,7 +1341,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription-form {
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
     width: 450px;
   }
 }
