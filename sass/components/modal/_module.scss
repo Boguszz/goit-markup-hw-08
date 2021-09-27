@@ -23,7 +23,6 @@
   transform: translate(-50%, -50%) scale(1);
 
   padding: 40px;
-  min-width: 450px;
   min-height: 581px;
 
   background-color: getColor("primary-bg");
@@ -32,6 +31,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 250ms $time-animation;
+
+  @media screen and (min-width: $mobile) {
+    min-width: 450px;
+  }
 
   @media screen and (min-width: $desktop) {
     min-width: 528px;

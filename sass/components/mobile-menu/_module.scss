@@ -3,6 +3,8 @@
   top: 0;
   left: 0;
 
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
@@ -57,7 +59,7 @@
 }
 
 .mobile-menu__navigations-list {
-  margin-bottom: 306px;
+  margin-bottom: auto;
 }
 
 .mobile-menu__navigations-item:not(:last-child) {
