@@ -32,6 +32,10 @@
 
   transition: transform 250ms $time-animation;
 
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: $mobile) {
     min-width: 450px;
   }
